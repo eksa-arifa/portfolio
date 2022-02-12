@@ -41,7 +41,7 @@ fetch('https://api.github.com/users/eksa-arifa/repos').then(response => response
       let jumlahData = 10;
       more.onclick = ()=>{
         jumlahData = jumlahData + 10;
-        if (jumlahData > data.length) {
+        if (jumlahData >= data.length) {
           more.style.display = "none";
         }
         while(t < jumlahData){
